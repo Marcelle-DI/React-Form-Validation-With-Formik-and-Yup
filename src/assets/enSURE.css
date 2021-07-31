@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,700;1,300&display=swap');
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;  
+}
+h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+}
+
+input + span {
+  padding-right: 30px;
+}
+
+input:invalid+span:after {
+  position: absolute; content: '✖';
+  padding-left: 5px;
+}
+
+input:valid+span:after {
+  position: absolute;
+  content: '✓';
+  padding-left: 5px;
+}
+
+.container {
+    max-width: 40rem;
+    margin: 0 auto;
+    background: rgb(211, 211, 211, 0.5);
+    padding: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+  .btn-success {
+      color: #fff;
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+  }
+
+  .btn-normal {
+    color: #fff;
+    background-color: #c91500;
+    border-color: #c91500;
+}  
+
+.success-message {
+  background-color: #add8e6;
+  border-color: #add8e6;
+}
+
+img {
+  max-width: 25%;
+  height: auto;
+}
+
+.imgRight{    
+  text-align: right;  
+  }
+
+hr {
+  background-color: #c91500;
+  color: #c91500;
+  height: 5px;
+  width: 75%;
+}
