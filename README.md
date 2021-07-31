@@ -1,10 +1,11 @@
 # A React project implementing a form with Formik and Material-UI and form validation with Yup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and includes the following components:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and includes the following component libraries:
 
-- [Formik](https://formik.org).
-- [Yup](https://github.com/jquense/yup).
-- [Material-UI](https://material-ui.com/) including [@material-ui/pickers](https://material-ui-pickers.dev/)
+- [Formik](https://formik.org)
+- [Yup](https://github.com/jquense/yup)
+- [Material-UI](https://material-ui.com/) 
+- [@material-ui/pickers](https://material-ui-pickers.dev/)
  
 ## Available Scripts
 
