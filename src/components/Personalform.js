@@ -80,29 +80,28 @@ const Personalform = () => {
                         />
 
             {formik.errors.address ? <div>{formik.errors.address}</div> : null }
-            <MuiPickersUtilsProvider utils={DateFnsUtils}>
-      {/* <DatePicker value={selectedDate} onChange={handleDateChange} />
-      <TimePicker value={selectedDate} onChange={handleDateChange} />
-      <DateTimePicker value={selectedDate} onChange={handleDateChange} /> */}
-    
-                <DatePicker
-                    id="dob"
-                    name="dob"
-                    onChange={handleDateChange}
-                    value={selectedDate}
-                    // error={formik.touched.dob && Boolean(formik.errors.dob)}
-                    // helperText={formik.touched.dob && formik.errors.dob}                     
-                />
-            </MuiPickersUtilsProvider>    
+            <div className="form-group">
+                <MuiPickersUtilsProvider utils={DateFnsUtils}>
+        
+                    <DatePicker
+                        id="dob"
+                        name="dob"
+                        label="Date of Birth"
+                        onChange={handleDateChange}
+                        value={selectedDate}
+                        error={formik.touched.dob && Boolean(formik.errors.dob)}
+                        helperText={formik.touched.dob && formik.errors.dob}                     
+                    />
+                </MuiPickersUtilsProvider>
             {formik.errors.dob ? <div>{formik.errors.dob}</div> : null}
-
+</div>
             <Button
                 color="primary"
                 fullWidth
                 text="Submit"
                 type="submit"
                 variant="contained"  
-                 />
+            >Submit</Button>
 
         </form>
     );
