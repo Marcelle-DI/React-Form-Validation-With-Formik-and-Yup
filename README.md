@@ -4,8 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - [Formik](https://formik.org)
 - [Yup](https://github.com/jquense/yup)
-- [Material-UI](https://material-ui.com/) 
-- [@material-ui/pickers](https://material-ui-pickers.dev/)
+- [Material-UI](https://material-ui.com/)
  
 ## Available Scripts
 
